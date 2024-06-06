@@ -1,0 +1,762 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>My Portfolio</title>
+    <link rel="icon" type="image/x-icon" href="assets/binary-code.png">
+
+    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="mediaqueries.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+  </head>
+  <body>
+    <nav id="desktop-nav">
+      <div class="logo">Fares Ben Ammar</div>
+      <div>
+        <ul class="nav-links">
+          <li><a href="#about">About</a></li>
+          <li><a href="#experience">Experience</a></li>
+          <li><a href="#projects">Projects</a></li>
+          <li><a href="#contact">Contact</a></li>
+        </ul>
+      </div>
+    </nav>
+    <nav id="hamburger-nav">
+      <div class="logo">John Doe</div>
+      <div class="hamburger-menu">
+        <div class="hamburger-icon" onclick="toggleMenu()">
+          <span></span>
+          <span></span>
+          <span></span>
+        </div>
+        <div class="menu-links">
+          <li><a href="#about" onclick="toggleMenu()">About</a></li>
+          <li><a href="#experience" onclick="toggleMenu()">Experience</a></li>
+          <li><a href="#projects" onclick="toggleMenu()">Projects</a></li>
+          <li><a href="#contact" onclick="toggleMenu()">Contact</a></li>
+        </div>
+      </div>
+    </nav>
+    <section id="profile">
+      <div class="section__pic-container">
+        <img src="./assets/profile-pic.png" alt="John Doe profile picture" />
+      </div>
+      <div class="section__text">
+        <p class="section__text__p1">Hello, I'm</p>
+        <h1 class="title">Fares Ben Ammar</h1>
+        <p class="section__text__p2">Software engineering Student </p>
+        <div class="btn-container">
+          <button
+            class="btn btn-color-2"
+            onclick="window.open('./assets/resume-example.pdf')"
+          >
+            Download CV
+          </button>
+          <button class="btn btn-color-1" onclick="location.href='https://www.instagram.com/fares.ben.ammar/?hl=fr'">
+            Instagram
+          </button>
+        </div>
+        <div id="socials-container">
+          <img
+            src="./assets/linkedin.png"
+            alt="My LinkedIn profile"
+            class="icon"
+            onclick="location.href='https://www.linkedin.com/in/fares-ben-ammar-14b8b3226/'"
+          />
+          <img
+            src="./assets/github.png"
+            alt="My Github profile"
+            class="icon"
+            onclick="location.href='https://github.com/'"
+          />
+        </div>
+      </div>
+    </section>
+    <section id="about">
+      <p class="section__text__p1">Get To Know More</p>
+      <h1 class="title">About Me</h1>
+      <div class="section-container">
+        <div class="section__pic-container">
+          <img
+            src="./assets/about-pic.png"
+            alt="Profile picture"
+            class="about-pic"
+          />
+        </div>
+        <div class="about-details-container">
+          <div class="about-containers">
+            <div class="details-container">
+              <img
+                src="./assets/experience.png"
+                alt="Experience icon"
+                class="icon"
+              />
+              <h3>Experience</h3>
+              <p>2+ internship  <br />Software Development</p>
+            </div>
+            <div class="details-container">
+              <img
+                src="./assets/education.png"
+                alt="Education icon"
+                class="icon"
+              />
+              <h3>Education</h3>
+              <p>Information technology
+                Bachelors Degree<br />Third year enginnering student at Esprit</p>
+            </div>
+          </div>
+          <div class="text-container">
+            <p>
+             
+               I am Fares, a dedicated individual who firmly believes in the power of discipline to realize my dreams.
+                I am passionate about continuous learning and strive for perfection in all my endeavors.
+                 Committed to my goals, I am willing to put in the extra effort, 
+                 even sacrificing sleep to ensure that my work reflects the vision I have imagined.
+            </p>
+          </div>
+        </div>
+      </div>
+      <img
+        src="./assets/arrow.png"
+        alt="Arrow icon"
+        class="icon arrow"
+        onclick="location.href='./#experience'"
+      />
+    </section>
+    <section id="experience">
+      <p class="section__text__p1">Explore My</p>
+      <h1 class="title">Experience</h1>
+      <div class="experience-details-container">
+        <div class="about-containers">
+          <div class="details-container">
+            <h2 class="experience-sub-title">Frontend Development</h2>
+            <div class="article-container">
+              <article>
+                <img
+                  src="./assets/checkmark.png"
+                  alt="Experience icon"
+                  class="icon"
+                />
+                <div>
+                  <h3>HTML & Css</h3>
+                  <p>Experienced</p>
+                </div>
+              </article>
+         
+
+              <article>
+                <img
+                  src="./assets/checkmark.png"
+                  alt="Experience icon"
+                  class="icon"
+                />
+                <div>
+                  <h3>Qt Creator</h3>
+                  <p>Experienced</p>
+                </div>
+              </article>
+
+              <article>
+                <img
+                  src="./assets/checkmark.png"
+                  alt="Experience icon"
+                  class="icon"
+                />
+                <div>
+                  <h3>Javafx</h3>
+                  <p>Experienced</p>
+                </div>
+              </article>
+        
+              <article>
+                <img
+                  src="./assets/checkmark.png"
+                  alt="Experience icon"
+                  class="icon"
+                />
+                <div>
+                  <h3>JavaScript</h3>
+                  <p>Basic</p>
+                </div>
+              </article>
+              <article>
+                <img
+                  src="./assets/checkmark.png"
+                  alt="Experience icon"
+                  class="icon"
+                />
+                <div>
+                  <h3>FlutrerFlow</h3>
+                  <p>Experienced</p>
+                </div>
+              </article>
+              
+          
+              
+            </div>
+          </div>
+          <div class="details-container">
+            <h2 class="experience-sub-title">Back-end Development</h2>
+            <div class="article-container">
+              <article>
+                <img
+                  src="./assets/checkmark.png"
+                  alt="Experience icon"
+                  class="icon"
+                />
+                <div>
+                  <h3>Php</h3>
+                  <p>Experienced</p>
+                </div>
+              </article>
+              
+              <article>
+                <img
+                  src="./assets/checkmark.png"
+                  alt="Experience icon"
+                  class="icon"
+                />
+                <div>
+                  <h3>Symfony</h3>
+                  <p>Experienced</p>
+                </div>
+              </article>
+            
+              <article>
+                <img
+                  src="./assets/checkmark.png"
+                  alt="Experience icon"
+                  class="icon"
+                />
+                <div>
+                  <h3>C++</h3>
+                  <p>Experienced</p>
+                </div>
+              </article>
+              <article>
+                <img
+                  src="./assets/checkmark.png"
+                  alt="Experience icon"
+                  class="icon"
+                />
+                <div>
+                  <h3>JAVA</h3>
+                  <p>Experienced</p>
+                </div>
+              </article>
+              <article>
+                <img
+                  src="./assets/checkmark.png"
+                  alt="Experience icon"
+                  class="icon"
+                />
+                <div>
+                  <h3>FlutrerFlow</h3>
+                  <p>Experienced</p>
+                </div>
+              </article>
+            </div>
+          </div>
+
+
+
+          <div class="details-container">
+            <h2 class="experience-sub-title">Object-Oriented Programming</h2>
+            <div class="article-container">
+              <article>
+                <img
+                  src="./assets/checkmark.png"
+                  alt="Experience icon"
+                  class="icon"
+                />
+                <div>
+                  <h3>C</h3>
+                  <p>Experienced</p>
+                </div>
+              </article>
+              <article>
+                <img
+                  src="./assets/checkmark.png"
+                  alt="Experience icon"
+                  class="icon"
+                />
+                <div>
+                  <h3>C++</h3>
+                  <p>Experienced</p>
+                </div>
+              </article>
+
+              <article>
+                <img
+                  src="./assets/checkmark.png"
+                  alt="Experience icon"
+                  class="icon"/>
+                <div>
+                  <h3>Java</h3>
+                  <p>Experienced</p>
+                </div>
+              </article>
+
+              
+
+              <article>
+                <img
+                  src="./assets/checkmark.png"
+                  alt="Experience icon"
+                  class="icon"
+                />
+                <div>
+                  <h3>Pascal</h3>
+                  <p>Experienced</p>
+                </div>
+              </article>
+
+
+              <article>
+                <img
+                  src="./assets/checkmark.png"
+                  alt="Experience icon"
+                  class="icon"
+                />
+                <div>
+                  <h3>Python</h3>
+                  <p>Basic</p>
+                </div>
+              </article>
+              
+            </div>
+          </div>
+
+          <div class="details-container">
+            <h2 class="experience-sub-title">Editing & Design tools</h2>
+            <div class="article-container">
+              <article>
+                <img
+                  src="./assets/checkmark.png"
+                  alt="Experience icon"
+                  class="icon"
+                />
+                <div>
+                  <h3>After Effects</h3>
+                  <p>BASIC</p>
+                </div>
+              </article>
+              <article>
+                <img
+                  src="./assets/checkmark.png"
+                  alt="Experience icon"
+                  class="icon"
+                />
+                <div>
+                  <h3>Premiere Pro </h3>
+                  <p>Experienced</p>
+                </div>
+              </article>
+              <article>
+                <img
+                  src="./assets/checkmark.png"
+                  alt="Experience icon"
+                  class="icon"
+                />
+                <div>
+                  <h3>Photoshop</h3>
+                  <p>Basic</p>
+                </div>
+              </article>
+
+              <article>
+                <img
+                  src="./assets/checkmark.png"
+                  alt="Experience icon"
+                  class="icon"
+                />
+                <div>
+                  <h3>Illustrator</h3>
+                  <p>Basic</p>
+                </div>
+              </article>
+            </div>
+          </div>
+        </div>
+      </div>
+      <img
+        src="./assets/arrow.png"
+        alt="Arrow icon"
+        class="icon arrow"
+        onclick="location.href='./#projects'"
+      />
+    </section>
+
+
+    <section id="projects">
+      <p class="section__text__p1">Browse My Recent</p>
+      <h1 class="title">Projects</h1>
+      <div class="experience-details-container" >
+        <div class="about-containers" >
+          <div class="details-container color-container" style=" box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.2) ;">
+            <div class="article-container">
+              <img
+                src="./assets/project-1.png"
+                alt="Project 1"
+                class="project-img"
+              />
+            </div>
+            <h2 class="experience-sub-title project-title">Project One</h2>
+            <div class="btn-container">
+              <button
+                class="btn btn-color-2 project-btn"
+                onclick="location.href='https://github.com/ProjetCPP2A18/2a18-black-hoodie-gang/tree/integration'"
+              >
+                Github
+              </button>
+           
+                 <button 
+                    class="btn btn-color-2 project-btn"
+                    onclick="openVideoDemo()">Live Demo</button>
+            </div> 
+          </div>
+
+
+      
+    
+
+
+
+          <div class="details-container color-container">
+            <div class="article-container">
+              <img
+                src="./assets/project-2.png"
+                alt="Project 2"
+                class="project-img"
+              />
+            </div>
+            <h2 class="experience-sub-title project-title">Project Two</h2>
+            <div class="btn-container">
+              <button
+                class="btn btn-color-2 project-btn"
+                
+                onclick="location.href='https://github.com/benammarfares/Arduino_M-tiers-P_solaire-lcd-buzzer-sensor-'"
+              >
+                Github
+              </button>
+              <button
+                class="btn btn-color-2 project-btn"
+                onclick="openVideoDemo()">Live Demo</button>
+                
+               
+              </button>
+            </div>
+          </div>
+
+          <script>
+            function openVideoDemo() {
+              var leftPosition = (window.innerWidth - 800) / 2; 
+              var topPosition = (window.innerHeight - 600) / 2; 
+              var newWindow = window.open("", "_blank", "width=800,height=600,left=" + leftPosition + ",top=" + topPosition);
+  
+              var videoElement = document.createElement("video");
+              videoElement.width = 800;
+              videoElement.height = 600;
+              
+              videoElement.controls = true;
+  
+              var sourceElement = document.createElement("source");
+              sourceElement.src = "./assets/chargi.mp4"; 
+              sourceElement.type = "video/mp4";
+              videoElement.appendChild(sourceElement);
+              newWindow.document.body.appendChild(videoElement);
+          }
+       </script>
+
+
+          <div class="details-container color-container">
+            <div class="article-container">
+              <img
+                src="./assets/project-3.png"
+                alt="Project 3"
+                class="project-img"
+              />
+            </div>
+            <h2 class="experience-sub-title project-title">Project Three</h2>
+            <div class="btn-container">
+              <button
+                class="btn btn-color-2 project-btn"
+                onclick="location.href='https://github.com/benammarfares/2D-game'"
+              >
+                Github
+              </button>
+              <button
+                class="btn btn-color-2 project-btn"
+                onclick="location.href='https://github.com/'"
+              >
+                Live Demo
+              </button>
+            </div>
+          </div>
+        </div>
+      </div>
+      <img
+        src="./assets/arrow.png"
+        alt="Arrow icon"
+        class="icon arrow"
+        onclick="location.href='./#contact'"
+      />
+    </section>
+       <br> </br>
+       <br> </br>
+       <br> </br>
+       <br> </br>
+       <br> </br>
+       <br> </br>  <br> </br>
+
+       <div class="details-container">
+
+       <div class="main" style="max-width: 1000px; margin: auto; display: flex; flex-direction: column; align-items: center;">
+        <h1 style="font-size: 30px; word-break: break-all;">GYM PLUS</h1>
+        <hr>
+        <p style="color: #1F75FE;" >Gym Software Copyright © 2024 Unity Nights. All Rights Reserved.  </p>
+      
+<br></br>
+
+
+
+
+         <div class="content" style=" box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.2) ; background-color: white; padding: 10px; display: flex; flex-direction: column; align-items: center;">
+          <video controls style="width: 100%;" >
+            <source src="assets/Unity Knights_GYMPLUS_3A9.mp4" type="video/mp4">
+            Your browser does not support the video tag.
+          </video>
+          <br></br>
+          <h2 class="experience-sub-title" style="font-family: Arial, sans-serif; font-size: 24px; color: #333; margin: 30px 0 10px; border-bottom: 2px solid #333; padding-bottom: 5px;"><img src="assets/Web.png" alt="Image description" style="height: 30px; vertical-align: middle; margin-right: 5px;">Desktop Application</h2>          <div class="slideshow-container">
+            <div class="slideshow-container">
+            <div class="mySlides fade">
+              <div class="numbertext">1 / 11</div>
+              <img src="assets/MACROS.png" style="width:100%">
+            </div>
+          
+            <div class="mySlides fade">
+              <div class="numbertext">2 / 11</div>
+              <img src="assets/ObjecDesktop1.png" style="width:100%">
+            </div>
+          
+            <div class="mySlides fade">
+              <div class="numbertext">3 / 11</div>
+              <img src="assets/PLANS.png" style="width:100%">
+            </div>
+          
+            <div class="mySlides fade">
+              <div class="numbertext">4 / 11</div>
+              <img src="assets/YOUTUBE.png" style="width:100%">
+            </div>
+          
+            <div class="mySlides fade">
+              <div class="numbertext">5 / 11</div>
+              <img src="assets/EXERR.png" style="width:100%">
+            </div>
+            <div class="mySlides fade">
+              <div class="numbertext">6 / 11</div>
+              <img src="assets/EXER.PNG" style="width:100%">
+            </div>
+            <div class="mySlides fade">
+              <div class="numbertext">7 / 11</div>
+              <img src="assets/DELET.PNG" style="width:100%">
+            </div>
+            <div class="mySlides fade">
+              <div class="numbertext">8 / 11</div>
+              <img src="assets/chat.PNG" style="width:100%">
+            </div>
+            <div class="mySlides fade">
+              <div class="numbertext">9 / 11</div>
+              <img src="assets/cals.PNG" style="width:100%">
+            </div>
+            <div class="mySlides fade">
+              <div class="numbertext">10 / 11</div>
+              <img src="assets/bmi.PNG" style="width:100%">
+            </div>
+
+            <div class="mySlides fade">
+              <div class="numbertext">11 / 11</div>
+              <img src="assets/CALSS.PNG" style="width:100%">
+            </div>
+            
+            <a class="prev" style="display:none">❮</a>
+            <a class="next" style="display:none">❯</a>
+          </div>
+          <br>
+          
+               
+                    <br></br>
+             </div>
+                    <h2 class="experience-sub-title" style="font-family: Arial, sans-serif; font-size: 24px; color: #333; margin: 30px 0 10px; border-bottom: 2px solid #333; padding-bottom: 5px;"><img src="assets/Website.png" alt="Image description" style="height: 30px; vertical-align: middle; margin-right: 5px;">Web Application</h2>          <div class="slideshow-container">
+                      <div class="mySlides2 fade">
+              <div class="numbertext">1 / 9</div>
+              <img src="assets/addObj.png" style="width:100%">
+            </div>
+          
+            <div class="mySlides2 fade">
+              <div class="numbertext">2 / 9</div>
+              <img src="assets/3D.PNG" style="width:100%">
+            </div>
+          
+            <div class="mySlides2 fade">
+              <div class="numbertext">3 / 9</div>
+              <img src="assets/bmiCal.png" style="width:100%">
+            </div>
+          
+            <div class="mySlides2 fade">
+              <div class="numbertext">4 / 9</div>
+              <img src="assets/3d.png" style="width:100%">
+            </div>
+          
+            <div class="mySlides2 fade">
+              <div class="numbertext">5 / 9</div>
+              <img src="assets/chatBot&CaloriesTracker.png" style="width:100%">
+            </div>
+            <div class="mySlides2 fade">
+              <div class="numbertext">6 / 9</div>
+              <img src="assets/dash.PNG" style="width:100%">
+            </div>
+            <div class="mySlides2 fade">
+              <div class="numbertext">7 / 9</div>
+              <img src="assets/exericeGen.PNG" style="width:100%">
+            </div>
+            <div class="mySlides2 fade">
+              <div class="numbertext">8 / 9</div>
+              <img src="assets/objectSchedu.PNG" style="width:100%">
+            </div>
+            <div class="mySlides2 fade">
+              <div class="numbertext">9 / 9</div>
+              <img src="assets/objManipulate.PNG" style="width:100%">
+            </div>
+
+            <a class="prev" style="display:none">❮</a>
+            <a class="next" style="display:none">❯</a>
+          </div>
+          <br>
+          
+          <h3>MY WORK ON GYM PLUS SOFTWARE</h3>
+          <br></br>
+
+          <p> So i had to develop The Objective management and Planning management 
+            this is how it works : so at first the client has to make an objective via the form and then select the coach who will be creating the plan for the client
+            then the coach in the dashbord will have a list of objectives that he has to complete so by seing the objective of the client he can create a plan 
+            Then he can send the created plan (Exercices plan & Diet plan) to the client by email and also the client can see his   plan on his interface.
+            as i was saying this is the concept that i used on my work after that did other feature like :<br>
+           <br></br> 
+
+           <hr width="80%">
+           <br></br> 
+           <p style="color:  #1F75FE; ">Web Application</p>
+
+           <br></br>
+           <p> <img src="assets/Verified Badge.png" alt="Image description" style="height: 20px; ">.Developed the CRUD for the Objective and the Planning (Symfony,html,css,js) <br>
+           <img src="assets/Verified Badge.png" alt="Image description" style="height: 20px; ">.And for the error control on the fields of the forms i used Ajax and the Symfony Assert from Validator <br>
+           <img src="assets/Verified Badge.png" alt="Image description" style="height: 20px; ">.Additionally, I implemented FullCalendar JavaScript, allowing clients to view their objectives organized by date, streamlining the management of their objectives. <br>
+            <img src="assets/Verified Badge.png" alt="Image description" style="height: 20px; ">.A Chat Bot using Open Ai Api <br>
+            <img src="assets/Verified Badge.png" alt="Image description" style="height: 20px; ">.A 3d Gym environment so the Client can see The Gym before paying his fees for the inscription.<br>
+            <img src="assets/Verified Badge.png" alt="Image description" style="height: 20px; ">.A Bmi Calculator so the Client can know is he is healthy or not .<br>
+            <img src="assets/Verified Badge.png" alt="Image description" style="height: 20px; ">.A Calories Tracker so the Client can have the possibilty to train at home and know how much calories he is loosing so here i used esp32 (Wifi data sending) and ECG sensors and battery 
+                  (the esp32 will send data 'values of heart rate sound in the blood' to the arduino Application where i will establish a connexion via Wifi so i can get the ip address of the esp32
+                   so i can then use it in my Controller in Symfony to communicate with the esp32 so i can get the data coming ) then in my controller i'm creating a file where i will stock the values coming 
+                   and then i'm reading the values from the file recnetly created and i'm sending them to chartJs Chart (reading the values from file  of 10 seconds passed because the ajax call will lose me 3 to 4 seconds
+                    so each 10 seconds i'm having the new values and then send them to a Heart rate equation so i can know the heart rate value because the other equation of Calories Lost  is based on it ) <br>
+                    <img src="assets/Verified Badge.png" alt="Image description" style="height: 20px; ">.An Exercice Generator (Client will have several pictures to select from the muscle that he want to train and then he will      get a list of exercices with their video and all informations that he need to know. )<br>
+                    <img src="assets/Verified Badge.png" alt="Image description" style="height: 20px; ">.Additionally i've worked with the chartJs Bundle Offered By Symfony to display The Objectives that a connected coach should do filtered by the Objective Type(Gain Weigh , Lose Weight, Maitain Weight)<br>
+                    <img src="assets/Verified Badge.png" alt="Image description" style="height: 20px; ">.Also i used the email bundle to send Email to the CLient (email that contains Exercices and Diet Plan)<br>
+                  </p>
+                  <br></br>
+                  <hr width="80%">
+                  <br></br>
+                  <p style="color:  #1F75FE;">Desktop Application</p>
+
+                  <br></br>
+
+                  <p> <img src="assets/Verified Badge.png" alt="Image description" style="height: 20px; ">Developed the CRUD for the Objective and the Planning (Javafx) <br>
+                    <img src="assets/Verified Badge.png" alt="Image description" style="height: 20px; ">.And for the error control on the fields of the forms  <br>
+                    <img src="assets/Verified Badge.png" alt="Image description" style="height: 20px; ">.Implemented An mp3 interface so the Client can listen to music while he is connected <br>
+                    <img src="assets/Verified Badge.png" alt="Image description" style="height: 20px; ">.Implemented A ChatBot Interface (Open Ai) + Speech To Text too<br>
+                    <img src="assets/Verified Badge.png" alt="Image description" style="height: 20px; ">.Implemented An Exercice template template linked with Youtube Template so when the Client clicks on any exercice he gets redirected to the youtube video<br>
+                    <img src="assets/Verified Badge.png" alt="Image description" style="height: 20px; ">.Integrated A browser Monitor <br>
+                    <img src="assets/Verified Badge.png" alt="Image description" style="height: 20px; ">.Additionally i implemented A Food generator Template & Macros Pan based on any food typed by the Client <br>
+                    <img src="assets/Verified Badge.png" alt="Image description" style="height: 20px; ">.Moreover i added Calories Guide generator that works after the Client fill all the fields so that he gets 4 type of diets with calories that he can follow to achieve his goal <br>
+                    <img src="assets/Verified Badge.png" alt="Image description" style="height: 20px; ">.Moreover i used the Bmi Api as a feature that can help the Client using a Bar Chart so it can be easy to understand and read <br>
+                    <img src="assets/Verified Badge.png" alt="Image description" style="height: 20px; ">.Implemented a Calories Burned Tracker but the process is a little bit different from the approach I used in my web project. Here, I used the IP address of the ESP32 to get the data, but didn't make a file. Instead, I worked the process on a thread and read the data as it was coming from the ESP32, putting it into a list. Then, after 15 seconds, I send the data to be displayed, which is nearly the same approach as in the web project.  <br>
+                    <img src="assets/Verified Badge.png" alt="Image description" style="height: 20px; ">.Developed a Planning interface so the Client can see his Finished Plans also the unfinished ones add to the notification email that he gets when his plans is ready.  <br>
+                  </p>
+        </div>
+        </div>
+      </div>
+<br></br>
+<br></br>
+
+
+<div class="details-container">
+
+<div class="main" style="max-width: 1000px; margin: auto; display: flex; flex-direction: column; align-items: center;">
+  <h1 style="font-size: 30px; word-break: break-all;">GYM PLUS Mobile App</h1>
+  <p style="color: #1F75FE;" >Mobile Application Gym Plus Copyright © 2024 Unity Nights. All Rights Reserved.  </p>
+
+  <br></br>
+  <div class="container-outer" style=" box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.2) ;">
+    <div class="container">
+      <img src="assets/1.PNG" alt="Picture 1" class="about-picc">
+      <img src="assets/3.PNG" alt="Picture 2" class="about-picc">
+      <img src="assets/4.PNG" alt="Picture 3" class="about-picc">
+      <img src="assets/5.PNG" alt="Picture 4" class="about-picc">
+      <img src="assets/6.PNG" alt="Picture 5" class="about-picc">
+      <img src="assets/2.PNG" alt="Picture 6" class="about-picc">
+      <img src="assets/8.PNG" alt="Picture 7" class="about-picc">
+      <img src="assets/9.PNG" alt="Picture 9" class="about-picc">
+      <img src="assets/11.PNG" alt="Picture 8" class="about-picc">
+      <img src="assets/7.PNG" alt="Picture 11" class="about-picc">
+    </div>
+  </div>
+  <br></br>
+  <p><img src="assets/Verified Badge.png" alt="Image description" style="height: 20px; ">.The Mobile Project we've developed is based on the same core logic and concept as the GymPlus Web and Desktop applications. However, the key difference lies in the database technology we've chosen to use for this mobile implementation - Firebase. 
+     This strategic decision reflects our commitment to leveraging the latest advancements in mobile app development to enhance the overall 
+     user experience. <br>
+  </p>
+</div>
+</div>
+    <section id="contact">
+      <p class="section__text__p1">Get in Touch</p>
+      <h1 class="title">Contact Me</h1>
+      <div class="contact-info-upper-container">
+        <div class="contact-info-container">
+          <img
+            src="./assets/email.png"
+            alt="Email icon"
+            class="icon contact-icon email-icon"
+          />
+          <p><a href="mailto:benammar.fares@esprit.tn">benammar.fares@esprit.tn</a></p>
+         
+        </div>
+        <div class="contact-info-container">
+          <img
+            src="./assets/linkedin.png"
+            alt="LinkedIn icon"
+            class="icon contact-icon"
+          />
+          <p><a href="https://www.linkedin.com/in/fares-ben-ammar-14b8b3226/">LinkedIn</a></p>
+        </div>
+      </div>
+    </section>
+    <footer>
+      <nav>
+        <div class="nav-links-container">
+          <ul class="nav-links">
+            <li><a href="#about">About</a></li>
+            <li><a href="#experience">Experience</a></li>
+            <li><a href="#projects">Projects</a></li>
+            <li><a href="#contact">Contact</a></li>
+          </ul>
+        </div>
+      </nav>
+      <p>Copyright &#169; 2023 Fares Ben Ammar . All Rights Reserved.</p>
+    </footer>
+    <script src="script.js"></script>
+  </body>
+</html>
