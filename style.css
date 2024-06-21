@@ -9,6 +9,7 @@
 
 body {
   font-family: "Poppins", sans-serif;
+  background-color:#FDFCFD ; 
 }
 
 html {
@@ -174,7 +175,67 @@ section {
   height: 400px;
   width: 400px;
   margin: auto 0;
+  position: relative; 
 }
+
+.section__pic-container img {
+  animation: pop-up 0.5s ease-in-out, one-shake 0.5s ease-in-out 0.5s;
+}
+.profile-pic {
+  transition: transform 0.3s ease-in-out;
+}
+
+.project-img {
+  max-width: 100%;
+  height: auto;
+}
+
+.fade-out {
+  animation: fadeOut 1s ease-in-out;
+}
+
+@keyframes fadeOut {
+  0% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 0;
+  }
+}
+
+@keyframes pop-up {
+  0% {
+    transform: scale(0.8);
+    opacity: 0;
+  }
+  50% {
+    transform: scale(1.1);
+    opacity: 1;
+  }
+  100% {
+    transform: scale(1);
+    opacity: 1;
+  }
+}
+@keyframes one-shake {
+  0% {
+    transform: translateX(0);
+  }
+  25% {
+    transform: translateX(-5px);
+  }
+  50% {
+    transform: translateX(5px);
+  }
+  75% {
+    transform: translateX(-5px);
+  }
+  100% {
+    transform: translateX(0);
+  }
+}
+
+
 
 .section__text {
   align-self: center;
@@ -192,6 +253,17 @@ section {
 .section__text__p2 {
   font-size: 1.75rem;
   margin-bottom: 1rem;
+  overflow: hidden; 
+  white-space: nowrap; 
+  animation: typewriter 5s steps(100) infinite;
+}
+@keyframes typewriter {
+  0% {
+    width: 0; 
+  }
+  100% {
+    width: 100%;
+  }
 }
 
 .title {
@@ -307,6 +379,7 @@ section {
   gap: 4rem;
   height: 80%;
 }
+
 
 .section__pic-container {
   height: 400px;
